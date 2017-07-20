@@ -1,5 +1,6 @@
 body {
     line-height: 1.5;
+    height: 100%;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, footer, header, li, main, nav, ul {
@@ -11,4 +12,14 @@ body, h1, h2, h3, h4, h5, h6, p, footer, header, li, main, nav, ul {
 footer, header, main, nav {
     display: block;
     position: relative;
+}
+
+nav {
+    background-color: linear-gradient(f4f4f4, ada8a8)
+}
+
+/* for phone */
+@media screen and (max-width: 481px) {
+
+
 }
