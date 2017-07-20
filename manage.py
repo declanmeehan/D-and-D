@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d6ea67e93408ed612cf93b3d6d2b0cb30876933
 import os
 from app import create_app, db
 from flask_script import Manager, Shell
