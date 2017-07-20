@@ -8,7 +8,7 @@
      href="{{ url_for('static', filename='styles/main.css') }}"> 
      <!-- flask for path to css style -->
     <script type="text/javascript"
-    href="{{ url for('static', filename='scripts/main.js') }}">
+    href="{{ url_for('static', filename='scripts/main.js') }}">
     </script>
 </head>
 
@@ -21,7 +21,8 @@
         <a href="login.html" 
 </nav>
 
-
+{% block page_content %}
+{% endblock %}
 
 
 
