@@ -7,4 +7,4 @@ class LoginForm(FlaskForm):
     password = PasswordField("Password", validators=[Required()])
 
     def validate_password(self, field):
-        
+        pass
