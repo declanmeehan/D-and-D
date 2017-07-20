@@ -1,0 +1,14 @@
+body {
+    line-height: 1.5;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, footer, header, li, main, nav, ul {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+footer, header, main, nav {
+    display: block;
+    position: relative;
+}
