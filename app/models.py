@@ -24,3 +24,9 @@ class User(UserMixin, db.Model):
 class Character(db.Model):
     __tablename__ = "characters"
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), index=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
