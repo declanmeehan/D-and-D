@@ -15,6 +15,7 @@
 <body>
 <nav> 
 <h1> Welcome To Dungeons and Dragons Made EZ! </h1> 
+<<<<<<< HEAD
 <div class="dropclass">
     <button id="dropdownbtn" class="dropbtn">login</button>
     <div id="mydropdown" class="dropdown-content hidden">
@@ -23,6 +24,18 @@
     <a href="#">Link 3</a>
   </div>
 </div>
+=======
+<div class="dropClass">
+    <button onclick="dropFunc()" class="dropbtn">login</button>
+    <div id="dropLogin" class="dropdown-content">
+        {% if current_user.is_authenticated %}
+        <a href="{{ url_for('auth.logout') }}">Logout</a>
+        {% else %}
+        <a href="{{ url_for('auth.login') }}">Login</a>
+        {% endif %}
+        <a href="{{ url_for('auth.register_user') }}" >New user</a>
+    </div>
+>>>>>>> 04aa7397cefe33b647b25aaecb8bc8972f1071fa
 </nav>
 
 {% block page_content %}
