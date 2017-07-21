@@ -8,25 +8,27 @@
      href="{{ url_for('static', filename='styles/main.css') }}"> 
      <!-- flask for path to css style -->
     <script type="text/javascript"
-    href="{{ url_for('static', filename='scripts/main.js') }}">
+    src="{{ url_for('static', filename='scripts/main.js') }}">
     </script>
 </head>
 
 <body>
 <nav> 
 <h1> Welcome To Dungeons and Dragons Made EZ! </h1> 
-<div class="dropClass">
-    <button onclick="dropFunc()" class="dropbtn">login</button>
-    <div id="dropLogin" class="dropdown-content">
-        <a href="{{ url_for('auth.login') }}" >login </a>
-        <a href="{{ url_for('auth.register_user') }}" >New user</a>
-    </div>
+<div class="dropclass">
+    <button id="dropdownbtn" class="dropbtn">login</button>
+    <div id="mydropdown" class="dropdown-content hidden">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 </nav>
 
 {% block page_content %}
 {% endblock %}
 
-
+<div id="test">1</div>
 
 
 </body>
