@@ -17,8 +17,10 @@
 <h1> Welcome To Dungeons and Dragons Made EZ! </h1> 
 <div class="dropClass">
     <button onclick="dropFunc()" class="dropbtn">login</button>
-    <div id="dropLogin" class="dropContent">
-        <a href="{{ url_for('auth.login') }}" >
+    <div id="dropLogin" class="dropdown-content">
+        <a href="{{ url_for('auth.login') }}" >login </a>
+        <a href="{{ url_for('auth.register_user') }}" >New user</a>
+    </div>
 </nav>
 
 {% block page_content %}
